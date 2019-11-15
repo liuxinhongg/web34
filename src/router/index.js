@@ -74,7 +74,7 @@ export default new Router({
             name: 'NotFount',
             component: NotFount,
             redirect: (to => {
-                console.log(to);
+                // console.log(to);
                 if (to.path === '/aaa') {
                     return '/detail'
                 } else if (to.path === '/bbb') {

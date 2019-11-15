@@ -14,6 +14,9 @@ export default {
     created() {
       console.log(this.$route);
       this.id=this.$route.query.nav;
+       this.$http.get('/api/w/website/findGoodsTypeList').then(res=>{
+        console.log(res);
+      })
     },
 }
 </script>

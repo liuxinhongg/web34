@@ -1,15 +1,15 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <!-- <img src="./assets/logo.png"> -->
     <!-- 默认的是hash模式 
       <a href="#/">首页</a>
     <a href="#/detail">详情页</a> -->
     <!--history模式
        <a href="/">首页</a>
     <a href="/detail">详情页</a> -->
-    <router-link to="/" exact>首页</router-link>
+    <!-- <router-link to="/" exact>首页</router-link>
     <router-link to="/detail" active-class="nav">详情页</router-link>
-    <router-link to="/aa">hello页</router-link>
+    <router-link to="/aa">hello页</router-link> -->
     <router-view/>
   </div>
 </template>
