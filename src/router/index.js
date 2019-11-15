@@ -4,6 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 import frist from '@/components/frist'
 import detail from '@/components/detail'
 import about from '@/components/about'
+import person from '@/components/person'
 const User = {
     template: '<div><h1>User {{ $route.params.id }}</h1> <router-view/></div>'
 }
@@ -38,6 +39,11 @@ export default new Router({
             path: '/detail',
             name: 'detail',
             component: detail
+        },
+        {
+            path: '/person',
+            name: 'person',
+            component: person
         },
         {
             path: '/about/:id',
