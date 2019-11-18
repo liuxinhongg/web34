@@ -5,6 +5,8 @@ import frist from '@/components/frist'
 import detail from '@/components/detail'
 import about from '@/components/about'
 import person from '@/components/person'
+import page from '@/view/page'
+import add from '@/view/add'
 const User = {
     template: '<div><h1>User {{ $route.params.id }}</h1> <router-view/></div>'
 }
@@ -36,9 +38,19 @@ export default new Router({
             component: frist
         },
         {
+            path: '/page',
+            name: 'page',
+            component: page
+        },
+        {
             path: '/detail',
             name: 'detail',
             component: detail
+        },
+        {
+            path: '/add',
+            name: 'add',
+            component: add
         },
         {
             path: '/person',
@@ -46,7 +58,7 @@ export default new Router({
             component: person
         },
         {
-            path: '/about/:id',
+            path: '/about',
             name: 'about',
             component: about
         },
