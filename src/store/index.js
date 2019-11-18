@@ -3,7 +3,8 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 const store = new Vuex.Store({
     state: {
-        num: 105
+        num: 105,
+        name: 'zhangsan'
     },
     getters: {
         count: state => {

@@ -4,14 +4,11 @@
       <input type="button" value="-" @click="jian(3)">
          {{num}}
       <input type="button" value="+" @click="add(2)">
-      <!-- {{num2}} -->
-      <h1> <font color="red">{{name}}</font> </h1>
-      <h1> <font color="blue">{{count}}</font> </h1>
+      {{num2}}
   </div>
 </template>
 
 <script>
-import {mapState,mapGetters,mapActions} from 'vuex'
 export default {
     // data() {
     //     return {
@@ -19,26 +16,14 @@ export default {
     //     }
     // },
     computed: {
-        ...mapState({
-            num(){
-                return this.$store.state.num
-            },
-            name(){
-                return this.$store.state.name
-            },
-        }),
-        ...mapGetters({
-            count:'count'
-        })
-       
-        // num2(){
-        //     return this.$store.getters.count;
-        // },
+        num(){
+            return this.$store.state.num
+        },
+        num2(){
+            return this.$store.getters.count;
+        },
     },
     methods: {
-        ...mapActions({
-            jiaadd:'Addaction'
-        }),
         add(num){
             // this.num+=5;
             // this.$store.commit("increment",{n:num,name:'wangxiaoer'})
